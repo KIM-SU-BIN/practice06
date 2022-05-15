@@ -1,22 +1,22 @@
 package com.javaex.ex01;
 
 public class Person {
-	
-	//필드
+
+	// 필드
 	protected String name;
 	protected String hp;
-	
-	//생성자
-	public Person() {}
-	
+
+	// 생성자
+	public Person() {
+	}
+
 	public Person(String name, String hp) {
 		this.name = name;
 		this.hp = hp;
 	}
-	
-	
-	//메소드
-	
+
+	// 메소드
+
 	public String getName() {
 		return name;
 	}
@@ -32,10 +32,10 @@ public class Person {
 	public void setHp(String hp) {
 		this.hp = hp;
 	}
-	
-	//메소드-일반
+
+	// 메소드-일반
 	public void showInfo() {
-		System.out.println("#이름=" + this.name + "," + "#핸드폰=" + this.hp  );
+		System.out.println("#이름: " + name + ", " + "#핸드폰: " + hp);
 	}
 
 }

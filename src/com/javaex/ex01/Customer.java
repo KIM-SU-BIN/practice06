@@ -1,26 +1,23 @@
 package com.javaex.ex01;
 
-public class Customer extends Person{
-	
-	//필드
+public class Customer extends Person {
+
+	// 필드
 	protected int cNo;
 	protected int point;
-	
-	//생성자
-	public Customer() {}
-	
-	public Customer(String name, String hp, int cNo, int point) {
-		super(name,hp);
-		this.cNo = cNo;
+
+	// 생성자
+	public Customer() {
 	}
-	public Customer(int cNo, int point) {
-		super();
+
+	public Customer(String name, String hp, int cNo, int point) {
+		super.name = name;
+		super.hp = hp;
 		this.cNo = cNo;
 		this.point = point;
 	}
-	
-	
-	//메소드
+
+	// 메소드
 	public int getcNo() {
 		return cNo;
 	}
@@ -36,12 +33,10 @@ public class Customer extends Person{
 	public void setPoint(int point) {
 		this.point = point;
 	}
-	
-	
-	//메소드-일반
+
+	// 메소드-일반
 	public void showInfo() {
-		System.out.println("#고객번호=" + this.cNo +"," + "#포인트점수= " + this.point );
-		super.showInfo();
+		System.out.println("#이름: " + name + ", " + "#핸드폰: " + hp + ", " + "#고객번호: " + cNo + "," + "#포인트점수:  " + point);
 	}
-	
+
 }
